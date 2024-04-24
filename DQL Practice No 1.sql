@@ -56,6 +56,13 @@ where salary in(2200,10000, 14000)
 order by salary;
 
 
+-- using Not in()
+
+select first_name||' '||last_name||'  ' as Fullname,email ,salary,hire_date JoinDate 
+from employees
+where salary not in(2200,10000, 14000)
+order by salary;
+
 
 -- Nulls First or Last 
 
@@ -154,3 +161,17 @@ select employee_id as Id,first_name||' '||last_name||'  ' as Fullname,email ,sal
 from employees
 where job_id like 'IT\_%' escape '\'; -- Job id Starts with IT_ use \ to escape
 
+-- define variables
+
+Define &cond = salary between 10000 and 20000;
+select * from employees
+where &cond
+
+
+
+-- verify on 
+
+Define &&condi = salary between 10000 and 20000;
+set verify on
+select * from employees
+where &&condi
