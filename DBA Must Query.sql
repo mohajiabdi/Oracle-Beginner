@@ -20,4 +20,9 @@ select name, open_mode from r$pdbs;
 -- altering if its mounted
     --alter pluggable database open;
     
+    
+alter session set container = orclpdb;
+
+alter pluggable database orclpdb open;
+    
 
