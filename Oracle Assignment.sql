@@ -168,6 +168,80 @@ HAVING sum(salary) > 9000;
 
 
 
+/*  
+    1-display empno,ename,job,sal and deptno of the
+ employee who is earning the maximum salary?
+
+
+
+2-display empno,ename,job,sal and deptno of the 
+employee who is earning the least salary?
+
+
+3.display empno,ename,job of all those 
+employees who are working on a same job as of SMITH?
+
+
+4.display ename,job,sal of all those employees whose salary 
+is more than the avg salary of all the employees?
+
+
+
+5.display first 3 maximum salaries?  SET OPERATORS
+
+
+
+
+
+6.display ename,job,sal,deptno of all those employees 
+
+whose salary is more than the min salary of Sales Department?
+
+
+7.display ename,job,sal,deptno of all those employees who are working on a job and deptno as of SMITH?
+
+8.display ename,job,sal,deptno of all those employees who are working 
+  on a same job and deptno as of SMITH & TURNER?
+
+
+9.display ename,job,sal,deptno of all those employees whose
+ salary is more than the avg salary of their respective departments?
+
+
+
+10.Display ename,job,sal and experience of all the employees in terms of months?
+
+
+11.Display ename,job,sal and experience of all the employees in terms of years?
+
+
+12.Display ename,job,sal and experience of all the employees whose exp is more than 27 years;
+
+
+13.count the number of employees who are being paid with salary?
+
+
+14.display total salary,avg salary,max salary,min salary,number of employees working in deptno 30?
+
+15.display deptno and total salary of deptno 20?
+
+
+16.display deptno,job,and total salary being paid on each deptno and job?
+
+
+17.display deptno and number of employees of all those departments 
+where more than 3 employees are working?
+
+
+18.display deptno and total salary of that department 20 
+only if the total salary is more than 9000?
+
+
+*/
+
+
+
+
 
 
 
