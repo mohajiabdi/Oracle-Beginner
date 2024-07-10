@@ -241,6 +241,12 @@ only if the total salary is more than 9000?
 
 
 
+-- Mounted and Unmounted fixing 
+
+alter session set container =orclpdb;
+
+alter pluggable database orclpdb open;
+
 
 
 

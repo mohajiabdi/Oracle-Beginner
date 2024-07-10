@@ -61,3 +61,18 @@ select location_id, to_char(null), State_province from locations;
 select employee_id  "Employee Id",job_id  "Job Id", Salary as Salary from employees
 union 
 select employee_id, Job_id, 0 from job_history;
+
+
+
+
+
+
+
+-- Sub QUery 
+SELECT emp.last_name
+FROM   employees emp
+WHERE  emp.employee_id <> any
+                           (SELECT mgr.manager_id
+                            FROM   employees mgr);
+
+
