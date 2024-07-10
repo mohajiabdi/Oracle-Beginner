@@ -68,11 +68,58 @@ select employee_id, Job_id, 0 from job_history;
 
 
 
--- Sub QUery 
+-- Sub QUery
+---
+
+---SubQuery and More
 SELECT emp.last_name
 FROM   employees emp
 WHERE  emp.employee_id <> any
                            (SELECT mgr.manager_id
                             FROM   employees mgr);
+                            
+                            
 
+
+
+
+select last_name, Job_id, salary, department_id
+from employees e
+where job_id = all
+            (select j.job_id from employees j
+             where j.last_name = 'King' and last_name ='Kocchar'
+            )
+and Department_id = all
+                (Select d.department_id from employees d
+                 where d.last_name = 'King' and last_name= 'Kocchar'
+                );
+                
+                
+
+select employee_id,last_name from employees
+where Department_id = any
+                (Select d.department_id from employees d
+                 where last_name = 'King'
+                );
+                
+                
+                
+                
+select department_id,last_name, Job_id, salary 
+from employees e
+where job_id = all
+            (select j.job_id from employees j
+             where j.last_name = '' and last_name ='Kocchar'
+            )
+and Department_id = all
+                (Select d.department_id from employees d
+                 where d.last_name = 'King' and last_name= 'Kocchar'
+                )
+Order by department_id;
+                
+                
+                
+                
+select employye_id from employees
+where last_name = 'SMITH';
 
